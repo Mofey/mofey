@@ -1,5 +1,5 @@
 {
-  "name": "node-express-email-backend",
+  "name": "node-express-subscription-backend",
   "version": "1.0.0",
   "description": "Express + TypeScript backend for handling contact forms and newsletter subscriptions via nodemailer (no database).",
   "main": "dist/index.js",

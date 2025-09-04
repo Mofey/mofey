@@ -44,10 +44,12 @@ router.post('/contact', async (req: Request, res: Response) => {
     const safeEmail = escapeHtml(email);
     const safePhone = phone ? escapeHtml(phone) : '';
     const safeProject = project ? escapeHtml(project) : '';
+    const safeSubject = escapeHtml(subjectRaw || '');
     const safeMessageHtml = escapeHtml(message).replace(/\n/g, '<br/>');
 
     const html = `
       <h2>New contact form submission</h2>
+      <p><strong>Subject:</strong> ${safeSubject}</p>
       <p><strong>Name:</strong> ${safeName}</p>
       <p><strong>Email:</strong> ${safeEmail}</p>
       ${safePhone ? `<p><strong>Phone:</strong> ${safePhone}</p>` : ''}
