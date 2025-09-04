@@ -54,13 +54,13 @@ app.use(rateLimit({
   legacyHeaders: false
 }));
 
-app.get('/health', (_req, res) => res.json({ ok: true }));
+app.get('/health', (req, res) => res.json({ ok: true }));
 
 app.use('/api', contactRouter);
 app.use('/api', subscribeRouter);
 
 // error handler
-app.use((err: any, _req: express.Request, res: express.Response, _next: express.NextFunction) => {
+app.use((err: any, req: express.Request, res: express.Response, _next: express.NextFunction) => {
   console.error(err);
   res.status(500).json({ ok: false, error: err?.message || 'Internal error' });
 });
