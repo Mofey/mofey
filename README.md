@@ -1,21 +1,21 @@
-# Hi — I’m **Mofey** 👋  
+# Hi, I’m **Mofey** 👋  
 _Full-stack developer • MERN / PERN • TypeScript • Tailwind CSS • Python • Machine Learning_
 
-This repository (`Mofey/mofey`) is my GitHub **profile README** — a quick snapshot of who I am and a featured utility project I use across my personal sites.
+This repository (`Mofey/mofey`) is my GitHub **profile README**. A quick snapshot of who I am and a featured utility project I use across my personal sites.
 
 ---
 
 # Node / Express TypeScript Email Backend (No DB)
 
-A small, focused Express + TypeScript backend that accepts contact form and subscription requests from multiple frontends and forwards them as email notifications using **nodemailer**. No database required — lightweight and easy to drop into any personal site or static frontend.
+A small, focused Express + TypeScript backend that accepts contact form and subscription requests from multiple frontends and forwards them as email notifications using **nodemailer**. No database required, lightweight and easy to drop into any personal site or static frontend.
 
 ## Why this repo
 I keep this repo public so visitors can quickly see a working backend I use for contact forms and newsletter signups without needing a full database. It’s simple, secure by default, and easy to configure for production SMTP providers.
 
 ## Features
-- `POST /api/contact` — receive contact form submissions and forward them as an email
-- `POST /api/subscribe` — receive newsletter subscription requests and forward as an email
-- No database required — emails are forwarded to a notification address
+- `POST /api/contact` = receive contact form submissions and forward them as an email
+- `POST /api/subscribe` = receive newsletter subscription requests and forward as an email
+- No database required = emails are forwarded to a notification address
 - Configurable SMTP via environment variables or Ethereal for local testing
 - CORS support (configurable)
 - Basic rate limiting and security headers included
@@ -46,9 +46,9 @@ I keep this repo public so visitors can quickly see a working backend I use for 
 
 See `.env.example`. Key settings:
 
-- `NOTIFICATION_EMAIL` — where contact/subscribe messages are sent (default in repo: `mohfey@gmail.com`)
-- `SMTP_HOST`, `SMTP_PORT`, `SMTP_USER`, `SMTP_PASS` — SMTP credentials for nodemailer
-- `ALLOWED_ORIGINS` — comma-separated list of allowed CORS origins
+- `NOTIFICATION_EMAIL` = where contact/subscribe messages are sent (default in repo: `mohfey@gmail.com`)
+- `SMTP_HOST`, `SMTP_PORT`, `SMTP_USER`, `SMTP_PASS` = SMTP credentials for nodemailer
+- `ALLOWED_ORIGINS` = comma-separated list of allowed CORS origins
 
 ---
 
@@ -96,7 +96,7 @@ await fetch('https://your-backend.example.com/api/contact', {
 
 ## Notes & security
 - For production use a reputable SMTP provider (SendGrid, Mailgun, Amazon SES, Gmail with App Password, etc.).
-- **Do not** commit real credentials to source control — keep `.env` out of the repo.
+- **Do not** commit real credentials to source control, keep `.env` out of the repo.
 - This service forwards emails directly; add frontend spam protection (reCAPTCHA/honeypot) as needed.
 - Consider adding message validation and stronger rate limits if public-facing.
 
@@ -115,9 +115,9 @@ Explore my other repos for examples of React components, full-stack apps, and ML
 
 ## Contact & license
 - Default notification address in this project: `mohfey@gmail.com` (change via `.env`)
-- License: MIT (feel free to reuse or adapt this code — attribution appreciated)
+- License: MIT (Feel free to reuse or adapt this code. Attribution appreciated.)
 
 ---
 
-Thanks for stopping by — if you like what you see, follow the profile for updates. 🚀
+Thanks for stopping by and if you like what you see, follow my profile for updates. 🚀
 
